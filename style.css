@@ -76,6 +76,9 @@ body {
 .container-main-bn{
   display: flex;
   height: calc(100vh - 190px);
+  width: 100%;
+  max-width: 1920px;
+  padding: 0px 20px;
   align-items: center;
   gap: 30px;
   justify-content: center;
@@ -379,6 +382,7 @@ hr {
   top: 150px;
   right: -250px;
   height: calc(100vh - 150px);
+
 }
 
 .block-down{
@@ -413,3 +417,9 @@ hr {
   border: none;
   width: 300px;
 }
+
+.link_close-btn_img{
+  display: none;
+}
+
+
