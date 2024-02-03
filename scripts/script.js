@@ -43,13 +43,25 @@ $(document).ready(function() {
   }
   setInterval(animateArrow, 2000);
 
-    let range = document.querySelector('input[type="range"].slider-progress')
+    var range = document.querySelector('input[type="range"].slider-progress')
     range.style.setProperty('--value', range.value);
     range.style.setProperty('--min', range.min);
     range.style.setProperty('--max', range.max);
     range.addEventListener('input', () => range.style.setProperty('--value', range.value));
-    let textRange = document.querySelector('#square-value')
+    var textRange = document.querySelector('#square-value')
     range.addEventListener('input', () => textRange.innerHTML = range.value);
 });
 
+function showMenu(){
+  var menu = document.querySelector('.link_close_menu')
+  var button = document.querySelector('.link_close-btn_img')
+  menu.style.setProperty('display', 'flex')
+  button.style.setProperty('display', 'initial')
+}
 
+function closeMenu(){
+  var menu = document.querySelector('.link_close_menu')
+  var button = document.querySelector('.link_close-btn_img')
+  menu.style.setProperty('display', 'none')
+  button.style.setProperty('display', 'none')
+}

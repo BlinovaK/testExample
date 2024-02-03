@@ -21,8 +21,14 @@
         <a href="/index.html"><img class="header_logo" src="/img/logo.png" alt="logo"></a>
         <div class="links">
             <div class="link_close-btn">
-                <img class="link_close-btn_img" src="/img/close_btn.svg" alt="close_btn">
-                <a class="link" href="#">Меню</a>
+                <img class="link_close-btn_img" src="/img/close_btn.svg" alt="close_btn" onclick="closeMenu()">
+                <a class="link" onclick="showMenu()">Меню</a>
+                <div class="link_close_menu">
+                    <a href="#" class="link">Услуги</a>
+                    <a href="#" class="link">Статьи</a>
+                    <a href="#" class="link">Вакансии</a>
+                    <a href="#" class="link">Франшиза</a>
+                </div>
             </div>
             <a href="#" class="link">Портфолио</a>
             <a href="/price.html" class="link">Цены</a>
