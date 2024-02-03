@@ -20,8 +20,14 @@
         <a href="/index.html"><img class="header_logo" src="/img/logo.png" alt="logo"></a>
         <div class="links">
             <div class="link_close-btn">
-                <img class="link_close-btn_img" src="/img/close_btn.svg" alt="close_btn">
-                <a class="link" href="#">Меню</a>
+                <img class="link_close-btn_img" src="/img/close_btn.svg" alt="close_btn" onclick="closeMenu()">
+                <a class="link" onclick="showMenu()">Меню</a>
+                <div class="link_close_menu">
+                    <a href="#" class="link">Услуги</a>
+                    <a href="#" class="link">Статьи</a>
+                    <a href="#" class="link">Вакансии</a>
+                    <a href="#" class="link">Франшиза</a>
+                </div>
             </div>
             <a href="#" class="link">Портфолио</a>
             <a href="/price.html" class="link">Цены</a>
@@ -34,14 +40,13 @@
     </header>
 
     <div class="container-main-bn">
-        <form class="find-product" action="/php/getProduct.php" method="GET">
+        <form class="find-product" action="/php/getProduct.php" method="POST">
             <input type="text" placeholder="Введите артикул" name="art">
             <button class="header_btn" type="submit">Отправить</button>
         </form>
     </div>
 
     <script src="/scripts/script.js"></script>
-
 
 </body>
 
