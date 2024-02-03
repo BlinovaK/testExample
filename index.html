@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Тестовое задание</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="/index.html"><img class="header_logo" src="/img/logo.png" alt="logo"></a>
+        <div class="links">
+            <div class="link_close-btn">
+                <img class="link_close-btn_img" src="/img/close_btn.svg" alt="close_btn">
+                <a class="link" href="#">Меню</a>
+            </div>
+            <a href="#" class="link">Портфолио</a>
+            <a href="/price.html" class="link">Цены</a>
+            <a href="#" class="link">Схема работ</p>
+                <a href="#" class="link">Отзывы</a>
+                <a href="#" class="link">Контакты</a>
+                <a href="#" class="link">Гарантия</a>
+        </div>
+        <button class="header_btn">Обратный звонок</button>
+    </header>
+
+    <div class="container-main-bn">
+        <div class="container_promo">
+            <p class="container_promo-heading animatedLeft">Ремонт под ключ от 2900 руб/м².</p>
+            <p class="text-order animatedLeft">При заказе ремонта делаем дизайн-проект в подарок</p>
+            <hr>
+            <div class="container_advantages animatedLeft">
+                <div class="container_advantages-item">
+                    <img src="/img/car.svg" alt="#">
+                    <p>Бесплатный выезд в день обращения</p>
+                </div>
+                <div class="container_advantages-item">
+                    <img src="/img/garant.svg" alt="#">
+                    <p>Гарантия на работу до 5 лет</p>
+                </div>
+                <div class="container_advantages-item">
+                    <img src="/img/srok.svg" alt="#">
+                    <p>Жесткое соблюдение сроков</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container_calculate_cost animatedRight">
+            <p class="container_calculate_cost-heading">Рассчитайте стоимость ремонта</p>
+            <div class="container_calculate_cost-square">
+                <p class="container_calculate_cost-square-heading">
+                    Площадь квартиры:
+                </p>
+                <p class="container_calculate_cost-square-value">
+                    <span id="square-value">68</span>м²
+                </p>
+            </div>
+            <input class="container_calculate_cost-range slider-progress" type="range" max="118" min="18">
+            <p class="container_calculate_cost-radio">Тип жилья:</p>
+            <div class="container_calculate_cost-radio-items">
+                <div class="container_calculate_cost-radio-item">
+                    <input type="radio" name="typeOfHousing" value="Вторичное жилье" id="secondHousing">
+                    <label for="secondHousing">Вторичное жилье</label>
+                </div>
+                <div class="container_calculate_cost-radio-item">
+                    <input type="radio" name="typeOfHousing" value="Новостройка" id="newBuilding">
+                    <label for="newBuilding">Новостройка</label>
+                </div>
+                <div class="container_calculate_cost-radio-item">
+                    <input type="radio" name="typeOfHousing" value="Офис" id="office">
+                    <label for="office">Офис</label>
+                </div>
+            </div>
+            <p class="container_calculate_cost-radio rooms">Количество комнат:</p>
+            <div class="container_calculate_cost-radio-items rooms-items">
+                <div class="container_calculate_cost-radio-item">
+                    <input type="radio" name="countOfRooms" value="1" id="one">
+                    <label for="one">1</label>
+                </div>
+                <div class="container_calculate_cost-radio-item">
+                    <input type="radio" name="countOfRooms" value="2" id="two">
+                    <label for="two">2</label>
+                </div>
+                <div class="container_calculate_cost-radio-item">
+                    <input type="radio" name="countOfRooms" value="3+" id="threePlus">
+                    <label for="threePlus">3+</label>
+                </div>
+                <div class="container_calculate_cost-radio-item">
+                    <input type="radio" name="countOfRooms" value="Студия" id="studio">
+                    <label for="studio">Студия</label>
+                </div>
+            </div>
+            <button class="container_calculate_cost-btn">Отправить</button>
+
+        </div>
+        <div class="photo-container">
+            <img id="scrollingImage" class="animatedRightPhoto" src="/img/img-right.png">
+        </div>
+    </div>
+    <div class="arrow-down">
+        <img src="/img/arrow_down.svg" alt="arrow-down">
+        <p>Scroll</p>
+    </div>
+    <div class="block-down">
+    </div>
+
+
+    <script src="/scripts/script.js"></script>
+
+
+</body>
+
+</html>
