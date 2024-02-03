@@ -34,9 +34,9 @@
     </header>
 
     <div class="container-main-bn">
-        <form class="find-product">
-            <input type="text" placeholder="Введите артикул">
-            <button class="header_btn">Отправить</button>
+        <form class="find-product" action="/php/getProduct.php" method="GET">
+            <input type="text" placeholder="Введите артикул" name="art">
+            <button class="header_btn" type="submit">Отправить</button>
         </form>
     </div>
 
