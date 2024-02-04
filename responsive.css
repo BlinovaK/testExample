@@ -4,9 +4,19 @@
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
+  body{
+    padding: 0 15px;
+  }
+
+  .header{
+    gap: 10px;
+  }
+
   .links {
-    display: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
@@ -21,8 +31,9 @@
   .container-main-bn {
     display: flex;
     flex-direction: column;
+    height: auto;
+    margin-top: 10px;
   }
-
 
   .container_promo-heading {
     text-align: center;
@@ -44,6 +55,14 @@
 
   .rooms-items {   
     gap: 35px;
+  }
+
+  .arrow-down{
+    display: none;
+  }
+
+  .block-down{
+    margin-top: 20px;
   }
 }
 
