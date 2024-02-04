@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -35,6 +36,56 @@
                 <a href="#" class="link">Отзывы</a>
                 <a href="#" class="link">Контакты</a>
                 <a href="#" class="link">Гарантия</a>
+        </div>
+        <div class="mobile-menu">
+            <div class="wrapper">
+                <nav>
+                  <input type="checkbox" id="menu" name="menu" class="m-menu__checkbox">
+                  <label class="m-menu__toggle" for="menu">
+                    <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                  </label>
+                  <label class="m-menu__overlay" for="menu"></label>
+                
+                  <div class="m-menu">
+                    <div class="m-menu__header">
+                      <label class="m-menu__toggle" for="menu">
+                        <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                          <line x1="18" y1="6" x2="6" y2="18"></line>
+                          <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                      </label>
+                      <span></span>
+                    </div>
+                    <ul>
+                      <li>
+                        <label class="a-label__chevron" for="item-2">Меню</label>
+                        <input type="checkbox" id="item-2" name="item-2" class="m-menu__checkbox">
+                        <div class="m-menu">
+                          <div class="m-menu__header">
+                            <label class="m-menu__toggle" for="item-2">
+                              <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                                <path d="M19 12H6M12 5l-7 7 7 7"/>
+                              </svg>
+                            </label>
+                            <span>Меню</span>
+                          </div>
+                          <ul>
+                            <li><a href="#">Услуги</a></li>
+                            <li><a href="#">Статьи</a></li>
+                            <li><a href="#">Вакансии</a></li>
+                            <li><a href="#">Франшиза</a></li>
+                        </div>
+                      </li>
+                      <li><a href="#">Портфолио</a></li>
+                      <li><a href="/price.html">Цены</a></li>
+                      <li><a href="#">Схема работ</a></li>
+                      <li><a href="#">Отзывы</a></li>
+                      <li><a href="#">Контакты</a></li>
+                      <li><a href="#">Гарантия</a></li>
+                    </ul>  
+                  </div>
+                </nav>
+              </div>
         </div>
         <button class="header_btn">Обратный звонок</button>
     </header>

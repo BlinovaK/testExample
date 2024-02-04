@@ -1,5 +1,17 @@
 $(document).ready(function() {
 
+  var mobileMenu = document.querySelector('.wrapper');
+  var mobileMenuInput = document.querySelector('.m-menu__checkbox');
+  mobileMenuInput.addEventListener('input', () => {if(mobileMenuInput.checked){
+    mobileMenu.style.setProperty('width','100vw')
+    mobileMenu.style.setProperty('height','100vh')
+  }else{
+    mobileMenu.style.setProperty('width','auto')
+    mobileMenu.style.setProperty('height','auto')
+  }
+
+})
+
   var $animatedTextsLeft = $('.animatedLeft');
 
   $animatedTextsLeft.each(function(index) {
@@ -50,6 +62,8 @@ $(document).ready(function() {
     range.addEventListener('input', () => range.style.setProperty('--value', range.value));
     var textRange = document.querySelector('#square-value')
     range.addEventListener('input', () => textRange.innerHTML = range.value);
+
+
 });
 
 function showMenu(){

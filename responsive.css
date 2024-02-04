@@ -66,10 +66,18 @@
   }
 }
 
-@media (min-width: 992px) {
-}
+@media (max-width: 992px) {
+  .mobile-menu{
+    display: block;
+  }  
 
-@media (min-width: 768px) {
+  .links{
+    display: none;
+  }
+
+  .find-product{
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 457px) {
@@ -86,6 +94,20 @@
     .container_promo-heading{
         font-size: 35px;
         line-height: 45px;
+    }
+
+    .header{
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .container_calculate_cost-radio-items{
+      flex-wrap: wrap;
+    }
+
+    .container_calculate_cost{
+      max-height: max-content;
+      width: auto;
     }
 }
 
